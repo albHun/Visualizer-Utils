@@ -34,3 +34,5 @@ def absToRel(interList, type = "mm"):
 				mouse_up = interList[mouse_inter_index]
 				click_duration = mouse_up["time"] - mouse_down["time"]
 				mcRelaList.append((click_time, mouse_down["coor"], click_duration))		
+
+		return mcRelaList, starting_time
